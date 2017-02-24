@@ -1,0 +1,64 @@
+.wrapper {
+	width: 950px;
+	box-sizing: border-box;
+	border: 1px solid #999;
+	display: table;
+	margin: 0 auto;
+}
+.top_nav {
+	display: block;
+	width: 100%;
+	height: 20px;
+	background: #aaa;
+}
+.top_nav a{
+	color: #fff;
+	text-decoration: none;
+}
+.top_nav ul {
+	margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+	list-style-type: none; /* Убираем маркеры */
+	font-family: Helvetica, Arial, Geneva,  sans-serif;
+	display: inline-block;
+	position: relative;
+	width: 200px;
+	background: #aaa;
+	border-right: 1px solid #999;
+}
+.top_nav ul:first-child {
+	list-style-type: none; /* Убираем маркеры */
+	font-family: Helvetica, Arial, Geneva,  sans-serif;
+	display: inline-block;
+	position: relative;
+	width: 75px;
+	background: #aaa;
+	border-right: 1px solid #999;
+}
+.top_nav ul:hover {
+	//font-weight: bold;
+	background: #bbb;
+	cursor: pointer;
+}
+.top_nav ul div{
+	display: none;
+	position: absolute;
+	width:200;
+	top: 20;
+	background: #aaa;
+}
+.top_nav ul div li{
+	padding: 4px;
+	margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+	list-style-type: none; /* Убираем маркеры */
+	display: block;
+	background: #aaa;
+}
+.top_nav ul div li:hover{
+	background: #bbb;
+}
+.top_nav ul:hover div{
+	display: block;
+}
+
